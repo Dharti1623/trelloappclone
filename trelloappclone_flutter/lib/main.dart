@@ -1,3 +1,4 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:trelloappclone_client/trelloappclone_client.dart';
 import 'package:flutter/material.dart';
 import 'package:serverpod_flutter/serverpod_flutter.dart';
@@ -24,6 +25,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Trello App Clone',
       theme: ThemeData(
+        textTheme: Theme.of(context).textTheme.apply(
+            fontFamily: GoogleFonts.poppins().fontFamily,
+            bodyColor: Colors.white70),
         primarySwatch: Colors.blue,
       ),
       initialRoute: '/',

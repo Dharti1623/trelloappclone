@@ -2,6 +2,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:trelloappclone_client/trelloappclone_client.dart';
 import 'package:flutter/material.dart';
 import 'package:serverpod_flutter/serverpod_flutter.dart';
+import 'package:trelloappclone_flutter/features/home/presentation/index.dart';
 import 'package:trelloappclone_flutter/features/landing/presentation/index.dart';
 
 // Sets up a singleton client object that can be used to talk to the server from
@@ -31,7 +32,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute: '/',
-      routes: {'/': (context) => const Landing()},
+      routes: {
+        '/': (context) => const Landing(),
+        '/home': (context) => Home(),
+      },
     );
   }
 }

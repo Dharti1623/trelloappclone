@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trelloappclone_flutter/utils/color.dart';
 import 'package:trelloappclone_flutter/utils/config.dart';
 import 'package:trelloappclone_flutter/utils/constant.dart';
+import 'package:trelloappclone_flutter/utils/service.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -10,7 +11,7 @@ class Landing extends StatefulWidget {
   State<Landing> createState() => _LandingState();
 }
 
-class _LandingState extends State<Landing> {
+class _LandingState extends State<Landing> with Service{
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -26,9 +26,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Trello App Clone',
       theme: ThemeData(
+        useMaterial3: false,
         textTheme: Theme.of(context).textTheme.apply(
-            fontFamily: GoogleFonts.poppins().fontFamily,
-            bodyColor: Colors.white70),
+              fontFamily: GoogleFonts.poppins().fontFamily,
+              bodyColor: Colors.black,
+            ),
         primarySwatch: Colors.blue,
       ),
       initialRoute: '/',

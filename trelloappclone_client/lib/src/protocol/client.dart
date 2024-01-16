@@ -82,6 +82,13 @@ class _EndpointBoard extends _i1.EndpointRef {
         'getWorkspaceForBoard',
         {'board': board},
       );
+
+  _i2.Future<List<_i5.Board>> getAllBoards() =>
+      caller.callServerEndpoint<List<_i5.Board>>(
+        'board',
+        'getAllBoards',
+        {},
+      );
 }
 
 class _EndpointCard extends _i1.EndpointRef {

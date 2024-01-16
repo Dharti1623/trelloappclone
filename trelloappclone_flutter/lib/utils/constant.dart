@@ -1,7 +1,7 @@
 const headline = "Move teamwork forward - even on the go";
-const signUp = "Sign up";
+const signUpTxt = "Sign up";
 const signIn = "Sign in";
-const login = "Login";
+const loginTxt = "Login";
 
 const terms =
     "By signing up, you agree to our Terms of service and Privacy Policy";
@@ -21,7 +21,7 @@ const visibilityConfigurations = [
 ];
 const defaultDescription =
     "It's your board's time to shine! Let people know what this board is used for and what they can expect to see";
-const powerups = [
+const powerUps = [
   {
     "title": "Calendar Power-Up",
     "description":

@@ -1,0 +1,40 @@
+activity:
+  - createActivity:
+attachment:
+  - addAttachment:
+board:
+  - createBoard:
+  - updateBoard:
+  - deleteBoard:
+  - getWorkspaceForBoard:
+  - getAllBoards:
+card:
+  - createCard:
+  - updatedCard:
+checklist:
+  - createChecklist:
+  - updateChecklist:
+  - deleteChecklist:
+comment:
+  - createComment:
+  - updateComment:
+  - deleteComment:
+example:
+  - hello:
+listboard:
+  - getListsByBoard:
+  - createList:
+member:
+  - addMember:
+  - getMembersByWorkspace:
+  - getInformationOfMembers:
+  - deleteMember:
+user:
+  - createUser:
+workspace:
+  - createWorkspace:
+  - getWorkspacesByUser:
+  - getWorkspaceById:
+  - getBoardsByWorkspace:
+  - updateWorkspace:
+  - deleteWorkspace:

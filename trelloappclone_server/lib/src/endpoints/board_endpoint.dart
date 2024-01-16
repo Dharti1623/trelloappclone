@@ -22,4 +22,12 @@ class BoardEndpoint extends Endpoint {
     );
     return workspace;
   }
+
+  Future<List<Board>> getAllBoards(Session session) async {
+    List<Board> boards = await Board.find(
+      session,
+      where: (b) => b.id > 0,
+    );
+    return boards;
+  }
 }

@@ -30,7 +30,7 @@ class _HomeState extends State<Home> with Service {
               icon: Icon(Icons.search)),
           IconButton(
               onPressed: () {
-                //Navigate to Notification screen
+                Navigator.pushNamed(context, '/notifications');
               },
               icon: Icon(Icons.notifications_none_outlined)),
         ],
@@ -64,6 +64,7 @@ class _HomeState extends State<Home> with Service {
           backgroundColor: Colors.green[400],
           expandedFabSize: ExpandableFabSize.regular,
           child: const Icon(Icons.add),
+          distance: 50,
           children: const [
             CustomFloatingAction("Workspace", Icons.book, '/createWorkspace'),
             CustomFloatingAction("Board", Icons.book, '/createBoard'),

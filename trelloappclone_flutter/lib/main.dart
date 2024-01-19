@@ -5,6 +5,8 @@ import 'package:serverpod_flutter/serverpod_flutter.dart';
 import 'package:trelloappclone_flutter/features/home/presentation/index.dart';
 import 'package:trelloappclone_flutter/features/landing/presentation/index.dart';
 
+import 'features/notification/presentation/index.dart';
+
 // Sets up a singleton client object that can be used to talk to the server from
 // anywhere in our app. The client is generated from your server code.
 // The client is set up to connect to a Serverpod running on a local server on
@@ -37,6 +39,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const Landing(),
         '/home': (context) => Home(),
+        '/notifications' : (context)=> Notifications(),
       },
     );
   }
